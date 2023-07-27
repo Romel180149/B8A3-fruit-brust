@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      .font-lato{
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
+    <!-- font family -->
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- tailwind and daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/a662de0b57.js" crossorigin="anonymous"></script>
    
 </head>
-<body>
+<body class="font-lato">
     <!--1/nav var section starts here  -->
     
-        <nav class="flex items-center md:mb-0 md:ml-auto md:mr-auto justify-between flex-wrap bg-red-500  p-6 my-10 mx-14 rounded-s-full rounded-e-full  sm:flex-row ">
+        <nav class="flex items-center max-w-screen-xl md:px-8 lg:px-16  md:mb-0 md:ml-auto md:mr-auto justify-between flex-wrap bg-red-500  p-6 my-10 mx-14 rounded-s-full rounded-e-full  sm:flex-row">
             <div class=" hidden md:flex items-center flex-shrink-0 text-white mr-6">
              
               <span class="font-semibold text-xl tracking-tight p-4">Home</span>
@@ -85,46 +96,78 @@
         </div>
       </div>
     </div>
+    <!-- bonus section starts here -->
+    <!-- <div class="hidden lg:grid absolute right-60 -bottom-16 ">
+      <div class="flex justify-center gap-5 bg-white items-center text-center">
+          <div>
+              <img src="./images/fruit1.png" alt="">
+              <h1>Graps</h1>
+          </div>
+          <div>
+              <img src="./images/fruit2.png" alt="">
+              <h1>Orange</h1>
+          </div>
+          <div>
+              <img src="./images/fruit3.png" alt="">
+              <h1>Mango</h1>
+          </div>
+          <div>
+              <img src="./images/fruit4.png" alt="">
+              <h1>Strawberry</h1>
+          </div>
+          <div>
+              <img src="./images/fruit5.png" alt="">
+              <h1>Pomegranate</h1>
+          </div>
+      </div>
+  </div> -->
+
+
+<!-- bonus section ends here -->
       
 <!-- banner slider ends here -->
 
-<!-- deals of the day section -->
+<!--part/03 deals of the day section -->
 <section>
-  <div class="hero min-h-screen bg-base-200">
+  <div class="hero min-h-screen bg-base-200 bg-white pt-80">
     <div class="hero-content flex-col lg:flex-row-reverse">
-      <div class="grid grid-flow-col gap-5 text-center auto-cols-max list-decimal list-disc">
+      <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
         <div class="flex flex-col">
           <span class="countdown font-mono text-5xl">
-            <span style="--value:29;"></span>..
+            <span style="--value:29;"></span>
           </span>
-          Days
+          Day
         </div> 
         <div class="flex flex-col">
           <span class="countdown font-mono text-5xl">
-            <span style="--value:15;"></span>..
+            <span style="--value:15;">
+            
+            </span>
           </span>
           Hours
         </div> 
         <div class="flex flex-col">
           <span class="countdown font-mono text-5xl">
-            <span style="--value:25;"></span>..
+            <span style="--value:25;"></span>
           </span>
-          Min
+          Minutes
         </div> 
         <div class="flex flex-col">
           <span class="countdown font-mono text-5xl">
-            <span style="--value:08;"></span>...
+            <span style="--value:08;"></span>
           </span>
-          sec
+        Seconds
         </div>
       </div>
+      <!--  -->
+      <!--  -->
       <div>
         <h1 class="text-5xl font-bold">Deal of the day</h1>
         <p class="py-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
       </div>
     </div>
   </div>
-<div class="pt-5 pl-16 flex gap-5 pr-7">
+<div class="pt-5 pl-16 flex gap-5 pr-7 mr-7 mx-auto max-w-screen-xl">
   <div class="card w-96 bg-base-100 border rounded-sm  pt-7">
     <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
     <div class="card-body">
@@ -219,6 +262,7 @@
   </div>
 </div>
   </div>
+ <div class="justify-center text-center"> <button class="btn bg-red-500 p-4 mt-4">Shop all</button></div>
 </section>
 
 
@@ -298,6 +342,85 @@
 </section>
 
 <!-- team section parts ends here -->
+<!-- bonus part-01 starts here -->
+<header class="pb-20">
+  <div class="justify-center text-center">
+    <h1 class="md:text-5xl text-first font-extrabold">Why Choose Us</h1>
+    <p class="text-xl pt-7 text-xs mb-10">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+       Latin literature from 45 BC, making it over 2000 years old.</p>
+  </div>
+  <div class="grid grid-cols-1 items-center gap-5 lg:grid-cols-3">
+    <div class="space-y-5 order-2 lg:order-1">
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-4">
+            <i class="fa-solid fa-people-group p-3 border-white rounded-full bg-gray-200"></i>
+            <div class="text-center lg:text-left space-y-3">
+                <h1 class="text-2xl font-bold">Dedicated Team</h1>
+                <span class="w-24 h-[1px] bg-black inline-block"></span>
+                <p class="text-second text-xs max-w-xs">Professional employees are there for you to pick the
+                    most amazing and fresh fruits.</p>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-4">
+            <i class="fa-solid fa-heart p-3 border-white rounded-full bg-gray-200"></i>
+            <div class="text-center lg:text-left space-y-3">
+                <h1 class="text-2xl font-bold">Fresh is Best</h1>
+                <span class="w-24 h-[1px] bg-black inline-block"></span>
+                <p class="text-second text-xs max-w-xs">Professional employees are there for you to pick the
+                    most amazing and fresh fruits.</p>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-4">
+            <i class="fa-solid fa-gift p-3 border-white rounded-full bg-gray-200"></i>
+            <div class="text-center lg:text-left space-y-3">
+                <h1 class="text-2xl font-bold">Gift Certificates</h1>
+                <span class="w-24 h-[1px] bg-black inline-block"></span>
+                <p class="text-second text-xs max-w-xs">Professional employees are there for you to pick the
+                    most amazing and fresh fruits.</p>
+            </div>
+        </div>
+    </div>
+    <div class="mx-auto order-1 lg:order-2">
+        <img src="./images/whychoose1.png" alt="">
+    </div>
+    <div class="space-y-5 order-3 lg:order-3">
+        <div class="flex flex-col lg:flex-row-reverse justify-center items-center gap-4">
+            <i class="fa-solid fa-lemon p-3 border-white rounded-full bg-gray-200"></i>
+            <div class="text-center lg:text-right space-y-3">
+                <h1 class="text-2xl font-bold">Integrated Supplier</h1>
+                <span class="w-24 h-[1px] bg-black inline-block"></span>
+                <p class="text-second text-xs max-w-xs">Professional employees are there for you to pick the
+                    most amazing and fresh fruits.</p>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row-reverse justify-center items-center gap-4">
+            <i class="fa-solid fa-ice-cream p-3 border-white rounded-full bg-gray-200"></i>
+            <div class="text-center lg:text-right space-y-3">
+                <h1 class="text-2xl font-bold">Sustainable Practice</h1>
+                <span class="w-24 h-[1px] bg-black inline-block"></span>
+                <p class="text-second text-xs max-w-xs">Professional employees are there for you to pick the
+                    most amazing and fresh fruits.</p>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row-reverse justify-center items-center gap-4">
+            <i class="fa-solid fa-thumbs-up p-3 border-white rounded-full bg-gray-200"></i>
+            <div class="text-center lg:text-right space-y-3">
+                <h1 class="text-2xl font-bold">The Benefits Only</h1>
+                <span class="w-24 h-[1px] bg-black inline-block"></span>
+                <p class="text-second text-xs max-w-xs">Professional employees are there for you to pick the
+                    most amazing and fresh fruits.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</main>
+  <main>
+    <section>
+
+    </section>
+  </main>
+</header>
+<!-- bonus part-01 ends here -->
 
 <!--part/05 Footer starts here -->
 <footer class="footer footer-center p-10 bg-slate-950 text-base-content rounded">
@@ -325,8 +448,6 @@
   </div>
 </footer>
 <!--part/05 Footer ends here   -->
-
-
 
 
 
